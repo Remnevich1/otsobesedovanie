@@ -11,7 +11,7 @@ const MoviePage = () => {
   const [activePage, setActivePage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [loading, setLoading] = useState(false);
-  const search = "action";
+  const search = "love";
 
   useEffect(() => {
     setLoading(true)
@@ -27,7 +27,6 @@ const MoviePage = () => {
       })
   }, [activePage])
 
-  console.log(movies, totalPages)
   const activeMovie = movies.find(movie => movie.imdbID === activeId)
 
   if (loading) {

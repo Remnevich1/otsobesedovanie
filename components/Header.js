@@ -3,7 +3,7 @@ const Header = ({activePage, setActivePage, totalPages}) => {
       <span className="header__logo">FilmGlobe</span>
       <div className="header__pagination pagination">
         <button className="pagination__prev" onClick={() => {
-          if (activePage > 0) {
+          if (activePage > 1) {
             setActivePage(activePage - 1)
           }
         }}>Prev</button>
